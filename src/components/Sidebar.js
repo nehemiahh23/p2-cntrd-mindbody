@@ -1,9 +1,14 @@
 import React from 'react'
 
-function Sidebar() {
-  return (
-    <div>Sidebar</div>
-  )
+function Sidebar({ submit }) {
+  if (submit) {
+    return (
+      <div>Sidebar</div>
+    )
+  }
+  else {
+    return null
+  }
 }
 
 export default Sidebar
