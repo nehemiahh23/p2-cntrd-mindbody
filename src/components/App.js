@@ -1,8 +1,17 @@
 import React from "react";
+import Form from "./Form"
+import Mind from "./Mind"
+import Body from "./Body"
+import Connection from "./Connection";
 
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <>
+      <Form />
+      <Mind />
+      <Body />
+      <Connection />
+    </>
   );
 }
 
