@@ -2,7 +2,7 @@ import React from "react";
 import Form from "./Form"
 import Mind from "./Mind"
 import Body from "./Body"
-import Progress from "./Progress"
+import Connection from "./Connection";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Form />
       <Mind />
       <Body />
-      <Progress />
+      <Connection />
     </>
   );
 }
