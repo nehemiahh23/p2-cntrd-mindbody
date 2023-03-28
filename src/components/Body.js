@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { Parallax } from "react-parallax";
+import Fitness from '../images/body.jpg'
+
+
 
 function Body() {
+
   return (
-    <div>Body</div>
+    <Parallax className='body-image' bgImage={Fitness} strength={400}>
+
+    </Parallax>
   )
 }
 
