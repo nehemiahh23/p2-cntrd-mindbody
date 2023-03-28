@@ -1,3 +1,141 @@
 {
+    "meditations" : [
+        {
+        "id": 1,
+        "title": "Meditation 1",
+        "purpose": "This is the first meditation",
+        "guide": "John Doe",
+        "audio": "https://www.youtube.com/watch?v=1",
+        "image": "https://www.youtube.com/watch?v=1",
+        "duration": "1:00"
+
+        },
+        {
+        "id": 2,
+        "title": "Meditation 2",
+        "purpose": "This is the second meditation",
+        "guide": "John Doe",
+        "audio": "https://www.youtube.com/watch?v=2",
+        "image": "https://www.youtube.com/watch?v=2",
+        "duration": "1:00"
+
+        },
+        {
+        "id": 3,
+        "title": "Meditation 3",
+        "purpose": "This is the third meditation",
+        "guide": "John Doe",
+        "audio": "https://www.youtube.com/watch?v=3",
+        "image": "https://www.youtube.com/watch?v=3",
+        "duration": "1:00"
+
+        },
+        {
+        "id": 4,
+        "title": "Meditation 4",
+        "purpose": "This is the fourth meditation",
+        "guide": "John Doe",
+        "audio": "https://www.youtube.com/watch?v=4",
+        "image": "https://www.youtube.com/watch?v=4",
+        "duration": "1:00"
+
+        },
+        {
+        "id": 5,
+        "title": "Meditation 5",
+        "purpose": "This is the fifth meditation",
+        "guide": "John Doe",
+        "audio": "https://www.youtube.com/watch?v=5",
+        "image": "https://www.youtube.com/watch?v=5",
+        "duration": "1:00"
+
+        }
+    ],
+    "yoga": [
+        {
+            "id": 1 ,
+            "title": "Yoga 1",
+            "purpose": "This is the first yoga",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=1",
+            "duration": "1:00"
+        },
+        {
+            "id": 2 ,
+            "title": "Yoga 2",
+            "purpose": "This is the second yoga",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=2",
+            "duration": "1:00"
+        },
+        {
+            "id": 3 ,
+            "title": "Yoga 3",
+            "purpose": "This is the third yoga",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=3",
+            "duration": "1:00"
+        },
+        {
+            "id": 4 ,
+            "title": "Yoga 4",
+            "purpose": "This is the fourth yoga",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=4",
+            "duration": "1:00"
+        },
+        {
+            "id": 5 ,
+            "title": "Yoga 5",
+            "purpose": "This is the fifth yoga",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=5",
+            "duration": "1:00"
+        }
+    ],
+
+    "workouts": [
+        {
+            "id": 1 ,
+            "title": "Workout 1",
+            "purpose": "This is the first workout",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=4",
+            "duration": "1:00"
+        },
+        {
+            "id": 2 ,
+            "title": "Workout 2",
+            "purpose": "This is the second workout",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=4",
+            "duration": "1:00"
+        },
+        {
+            "id": 3 ,
+            "title": "Workout 3",
+            "purpose": "This is the third workout",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=4",
+            "duration": "1:00"
+        },
+        {
+            "id": 4 ,
+            "title": "Workout 4",
+            "purpose": "This is the fourth workout",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=4",
+            "duration": "1:00"
+        },
+        {
+            "id": 5 ,
+            "title": "Workout 5",
+            "purpose": "This is the fifth workout",
+            "guide": "John Doe",
+            "video": "https://www.youtube.com/watch?v=4",
+            "duration": "1:00"
+        }
+    ],
+
     "statuses": []
 }
