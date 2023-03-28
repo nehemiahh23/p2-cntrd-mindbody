@@ -1,4 +1,5 @@
-import {Routes, Route} from "react-router-dom";
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Form from "./Form"
 import Mind from "./Mind"
 import Body from "./Body"
@@ -26,7 +27,7 @@ function App() {
       <button onClick={dateIncrement}>New Day</button>
       <span>{ activeDate }</span>
       <Welcome />
-      <Form />
+      <Form submit={submit} setSubmit={setSubmit} />
       <NavBar />
           <Routes>
             <Route path="/progress" element={<Progress />} />
