@@ -1,16 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
-function Input({ submit, setSubmit }) {
+function Input({ submit, setSubmit, activeDate }) {
 
   // #region collect form data
   const [data, setData] = useState(
     {
-      date: "",
+      date: activeDate,
       mood: 3,
       sleep: "",
       comment: ""
     }
   )
+
+  useEffect(() => {
+    setData(
+      {
+        date: activeDate,
+        mood: 3,
+        sleep: "",
+        comment: ""
+      }
+    )
+  }, [activeDate])
 
   function changeHandler(e) {
     setData({...data, [e.target.name]: e.target.value})
@@ -37,14 +48,7 @@ function Input({ submit, setSubmit }) {
     })
     
     setSubmit(true)
-    setData(
-      {
-        date: "",
-        mood: "",
-        sleep: "",
-        comment: ""
-      }
-    )
+    
   }
 
   if (!submit) {
