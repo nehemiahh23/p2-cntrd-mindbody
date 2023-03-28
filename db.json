@@ -135,5 +135,7 @@
             "video": "https://www.youtube.com/watch?v=4",
             "duration": "1:00"
         }
-    ]
+    ],
+
+    "statuses": []
 }
