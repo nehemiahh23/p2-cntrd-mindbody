@@ -12,6 +12,13 @@ function Input({ submit, setSubmit, activeDate }) {
     }
   )
 
+  
+  function changeHandler(e) {
+    setData({...data, [e.target.name]: e.target.value})
+  }
+  // #endregion
+  
+  // side effect updates date in data as day increments
   useEffect(() => {
     setData(
       {
@@ -22,11 +29,6 @@ function Input({ submit, setSubmit, activeDate }) {
       }
     )
   }, [activeDate])
-
-  function changeHandler(e) {
-    setData({...data, [e.target.name]: e.target.value})
-  }
-  // #endregion
 
   function submitHandler(e) {
     e.preventDefault()
