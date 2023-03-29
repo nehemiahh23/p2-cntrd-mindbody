@@ -4,6 +4,8 @@ import Chart from "chart.js/auto"
 import ProgressPic from '../images/progress.jpg'
 import MoodGraph from './MoodGraph.js';
 import SleepGraph from './SleepGraph.js';
+import MoodMessage from './MoodMessage';
+import SleepMessage from './SleepMessage';
 
 //Fake Dashboard for now
 
@@ -26,6 +28,8 @@ function Progress({ submit }) {
         <Parallax className='progress-image' bgImage={ProgressPic} strength={400}>
             <div className='graph-container'>
                 <MoodGraph moodData={moodData} />
+                <MoodMessage />
+                <SleepMessage />
                 <SleepGraph sleepData={sleepData} />
             </div>
         </Parallax>
