@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Parallax } from "react-parallax";
-import Chart from "chart.js/auto"
+import { Chart } from "chart.js/auto"
 import ProgressPic from '../images/progress.jpg'
 import MoodGraph from './MoodGraph.js';
 import SleepGraph from './SleepGraph.js';
@@ -10,7 +10,7 @@ import SleepMessage from './SleepMessage';
 //Fake Dashboard for now
 
 
-function Progress({ submit }) {
+function ProgressPage({ submit }) {
     
     const [moodData, setMoodData] = useState([])
     const [sleepData, setSleepData] = useState([])
@@ -36,4 +36,4 @@ function Progress({ submit }) {
     )
 }
 
-export default Progress
+export default ProgressPage

@@ -98,7 +98,15 @@
       "duration": "1:00"
     }
   ],
-  "statuses": [],
+  "statuses": [
+    {
+      "date": "03/29/2023",
+      "mood": 3,
+      "sleep": null,
+      "comment": "",
+      "id": 1
+    }
+  ],
   "user": [
     {
       "form": {

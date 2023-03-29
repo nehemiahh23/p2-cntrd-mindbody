@@ -4,7 +4,7 @@ import Form from "./Form"
 import MindPage from "./MindPage"
 import BodyPage from "./BodyPage"
 import Connection from "./Connection";
-import Progress from "./Progress";
+import ProgressPage from "./ProgressPage";
 import Welcome from "./Welcome";
 import NavBar from "./NavBar";
 import Hello from "./Hello";
@@ -36,7 +36,7 @@ function App() {
             <Route path="/BodyPage" element={<BodyPage />} />
             <Route path="/Connection" element={<Connection />} />
           </Routes>
-      <Progress submit={submit}/>
+      <ProgressPage submit={submit}/>
         </>
   );
 }
