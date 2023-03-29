@@ -44,7 +44,7 @@ function Hello({user, setUser}) {
 </div>
 <div className="input-group mb-3">
 <div className="input-group-prepend">
- <span className="input-group-text"><i class="fa fa-lock"></i></span>
+ <span className="input-group-text"><i className="fa fa-lock"></i></span>
 </div>
 </div>
 <button type="button" className="btn btn-secondary btn-block">Start Here</button>

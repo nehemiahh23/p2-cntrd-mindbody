@@ -15,8 +15,7 @@ function Input({ submit, setSubmit }) {
   function changeHandler(e) {
     setData({...data, [e.target.name]: e.target.value})
   }
-  // #endregion
-
+  
   function submitHandler(e) {
     e.preventDefault()
 

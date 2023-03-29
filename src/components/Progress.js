@@ -5,7 +5,7 @@ import ProgressPic from '../images/progress.jpg'
 //Fake Dashboard for now
 
 
-function Progress() {
+function ProgressPage() {
     return (
         <Parallax className='progress-image' bgImage={ProgressPic} strength={400}>
 
@@ -13,4 +13,4 @@ function Progress() {
     )
 }
 
-export default Progress
+export default ProgressPage
