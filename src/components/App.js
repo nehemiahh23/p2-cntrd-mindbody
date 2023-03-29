@@ -4,7 +4,7 @@ import Form from "./Form"
 import MindPage from "./MindPage"
 import BodyPage from "./BodyPage"
 import ConnectionPage from "./Connection";
-import ProgressPage from "./Progress";
+import ProgressPage from "./ProgressPage";
 import Welcome from "./Welcome";
 import NavBar from "./NavBar";
 import Hello from "./Hello";
