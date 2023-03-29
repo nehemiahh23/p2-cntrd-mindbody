@@ -55,8 +55,8 @@ function Input({ submit, setSubmit, activeDate }) {
 
   if (!submit) {
     return (
-      <div>
-        <form onSubmit={submitHandler}>
+      <div className='form-box'>
+        <form onSubmit={submitHandler} className='body-form' style={{alignItems: "center"}}> 
           <label>Form: </label>
           <input onChange={changeHandler} type="range" min="1" max="5" name="mood" value={data.mood}></input>
           <input onChange={changeHandler} type="number" step=".5" name="sleep" value={data.sleep}></input>
