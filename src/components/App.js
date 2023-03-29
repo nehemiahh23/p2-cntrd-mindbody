@@ -21,6 +21,7 @@ function App() {
   function dateIncrement() {
     setDateObj(dateObj.add(1, "days"))
     setActiveDate(dateObj.format("L"))
+    setSubmit(false)
   }
   
   return (
@@ -29,7 +30,7 @@ function App() {
       <span>{ activeDate }</span>
       <Hello user={user} setUser={setUser}/>
       <Welcome user={user}/>
-      <Form submit={submit} setSubmit={setSubmit} />
+      <Form submit={submit} setSubmit={setSubmit} activeDate={activeDate} />
       <Progress />
       <Sidebar />
       <NavBar />
@@ -38,6 +39,7 @@ function App() {
             <Route path="/BodyPage" element={<BodyPage />} />
             <Route path="/Connection" element={<Connection />} />
           </Routes>
+      <Progress submit={submit}/>
         </>
   );
 }
