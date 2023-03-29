@@ -4,11 +4,11 @@ import Community from '../images/connection.jpg'
 
 //Social Media 
 
-function Connection() {
+function ConnectionPage() {
   return (
   <Parallax className='connection-image' bgImage={Community} strength={400}>
   </Parallax>
   )
 }
 
-export default Connection
+export default ConnectionPage

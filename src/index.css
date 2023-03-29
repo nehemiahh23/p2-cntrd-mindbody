@@ -144,6 +144,11 @@ height: 100vh;
   z-index: 1;
 }
 
+.connection-image {
+  position: flex;
+  height: 100vh;
+}
+
 #mood-form {
   display: flex;
   height: 100%;

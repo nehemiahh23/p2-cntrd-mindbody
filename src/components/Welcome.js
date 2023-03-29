@@ -3,7 +3,6 @@ import WelcomeImg from '../images/welcome.jpg'
 import { Parallax } from "react-parallax";
 
 
-//Sign-In Form Component That Tracks your Name and Brings you to the next page which is the Self-Check In 
 
 function Welcome({ user }) {
   return (
