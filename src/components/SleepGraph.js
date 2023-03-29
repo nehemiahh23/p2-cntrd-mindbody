@@ -1,15 +1,15 @@
 import React from 'react'
 import { Line } from 'react-chartjs-2'
 
-function LineGraph({ chartData }) {
+function SleepGraph({ sleepData }) {
   return (
-    <div style={{height: "80vh", width: "80vw"}}>
+    <div style={{height: "45vh", width: "45vw"}}>
         <Line
             data={{
-                labels: chartData.map(status => status.date),
+                labels: sleepData.map(status => status.date),
                 datasets: [
                     {
-                        data: chartData.map(status => status.mood)
+                        data: sleepData.map(status => status.sleep)
                     }
                 ]
             }}
@@ -17,7 +17,7 @@ function LineGraph({ chartData }) {
                 plugins: {
                     title: {
                         display: true,
-                        text: "Your Mood Graph"
+                        text: "Your Sleep Graph"
                     },
                     legend: {
                         display: false
@@ -29,4 +29,4 @@ function LineGraph({ chartData }) {
   )
 }
 
-export default LineGraph
+export default SleepGraph

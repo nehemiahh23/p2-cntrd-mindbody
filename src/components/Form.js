@@ -9,7 +9,7 @@ function Form({ submit, setSubmit, activeDate }) {
 
   return (
     <Parallax className='progress-image' bgImage={Blue} strength={400}>
-      <div id="form-page">
+      <div className='container'>
       <NavBar submit={submit} />
       <Input submit={submit} setSubmit={setSubmit} activeDate={activeDate} />
       <Message submit={submit} />

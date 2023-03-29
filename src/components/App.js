@@ -8,7 +8,6 @@ import ProgressPage from "./Progress";
 import Welcome from "./Welcome";
 import NavBar from "./NavBar";
 import Hello from "./Hello";
-import Sidebar from "./Sidebar";
 import moment from "moment";
 
 function App() {
@@ -30,7 +29,7 @@ function App() {
       <span>{ activeDate }</span>
       <Hello user={user} setUser={setUser}/>
       <Welcome user={user}/>
-      <Form submit={submit} setSubmit={setSubmit} activeDate={activeDate} />
+      <Form submit={submit} setSubmit={setSubmit} activeDate={activeDate} />  
       <NavBar />
           <Routes>
             <Route path= "/ProgressPage" element={<ProgressPage />} />
@@ -38,7 +37,7 @@ function App() {
             <Route path="/BodyPage" element={<BodyPage />} />
             <Route path="/ConnectionPage" element={<ConnectionPage />} />
           </Routes>
-      <Progress submit={submit}/>
+      <ProgressPage submit={submit}/>
         </>
   );
 }
