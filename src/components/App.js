@@ -25,6 +25,8 @@ function App() {
   
   return (
       <>
+      <button onClick={dateIncrement}>New Day</button>
+      <span>{ activeDate }</span>
       <Hello user={user} setUser={setUser}/>
       <Welcome user={user}/>
       <Form submit={submit} setSubmit={setSubmit} activeDate={activeDate} />  

@@ -2,24 +2,32 @@ import React, { useEffect, useState } from 'react'
 import { Parallax } from "react-parallax";
 import Chart from "chart.js/auto"
 import ProgressPic from '../images/progress.jpg'
-import LineGraph from './LineGraph.js';
+import MoodGraph from './MoodGraph.js';
+import SleepGraph from './SleepGraph.js';
 
 //Fake Dashboard for now
 
 
 function Progress({ submit }) {
     
-    const [chartData, setChartData] = useState([])
+    const [moodData, setMoodData] = useState([])
+    const [sleepData, setSleepData] = useState([])
 
     useEffect(() => {
         fetch('http://localhost:3002/statuses')
         .then(r => r.json())
-        .then(data => setChartData(data.map(status => ({date: status.date, mood: status.mood}))))
+        .then(data => {
+            setMoodData(data.map(status => ({date: status.date, mood: status.mood})))
+            setSleepData(data.map(status => ({date: status.date, sleep: status.sleep})))
+        })
     }, [submit])
 
     return (
         <Parallax className='progress-image' bgImage={ProgressPic} strength={400}>
-            <LineGraph chartData={chartData} />
+            <div className='graph-container'>
+                <MoodGraph moodData={moodData} />
+                <SleepGraph sleepData={sleepData} />
+            </div>
         </Parallax>
     )
 }
