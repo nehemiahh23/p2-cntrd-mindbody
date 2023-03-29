@@ -5,19 +5,16 @@ function NavBar() {
     const navigate = useNavigate()
 
     function handleHover() {
-        navigate('/mind')
+        navigate('/MindPage')
     }
 
   return (
-    <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/form">Form</NavLink>
-        <NavLink to="/progress">Progress</NavLink>
-        <NavLink to="/mind">Mind</NavLink>
-        <NavLink to="/body">Body</NavLink>
+    <nav className="contain-me" onMouseOver={handleHover}>
+        <NavLink to="/MindPage">Mind</NavLink>
+        <br />
+        <NavLink to="/BodyPage">Body</NavLink>
+        <br />
         <NavLink to="/connection">Connection</NavLink>
-        <NavLink to="/nomatch">NoMatch</NavLink>
-        <button onMouseOver={handleHover}>Explore</button>
     </nav>
   )
 }

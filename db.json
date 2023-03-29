@@ -3,10 +3,10 @@
     {
       "id": 1,
       "title": "Meditation 1",
+      "image": "https://www.youtube.com/watch?v=1",
       "purpose": "This is the first meditation",
       "guide": "John Doe",
       "audio": "https://www.youtube.com/watch?v=1",
-      "image": "https://www.youtube.com/watch?v=1",
       "duration": "1:00"
     },
     {
@@ -70,22 +70,6 @@
       "guide": "John Doe",
       "video": "https://www.youtube.com/watch?v=3",
       "duration": "1:00"
-    },
-    {
-      "id": 4,
-      "title": "Yoga 4",
-      "purpose": "This is the fourth yoga",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=4",
-      "duration": "1:00"
-    },
-    {
-      "id": 5,
-      "title": "Yoga 5",
-      "purpose": "This is the fifth yoga",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=5",
-      "duration": "1:00"
     }
   ],
   "workouts": [
@@ -112,23 +96,29 @@
       "guide": "John Doe",
       "video": "https://www.youtube.com/watch?v=4",
       "duration": "1:00"
-    },
-    {
-      "id": 4,
-      "title": "Workout 4",
-      "purpose": "This is the fourth workout",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=4",
-      "duration": "1:00"
-    },
-    {
-      "id": 5,
-      "title": "Workout 5",
-      "purpose": "This is the fifth workout",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=4",
-      "duration": "1:00"
     }
   ],
-  "statuses": []
+  "statuses": [],
+  "user": [
+    {
+      "form": {
+        "name": "Jack"
+      },
+      "id": 1
+    },
+    {
+      "form": {
+        "name": "Jack"
+      },
+      "id": 2
+    },
+    {
+      "name": "jack",
+      "id": 3
+    },
+    {
+      "name": "Nehemiah",
+      "id": 4
+    }
+  ]
 }
