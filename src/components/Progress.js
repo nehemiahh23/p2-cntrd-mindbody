@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Parallax } from "react-parallax";
 import ProgressPic from '../images/progress.jpg'
-import { Chart } from 'chart.js/auto';
 import LineGraph from './LineGraph';
 
 //Fake Dashboard for now
