@@ -7,7 +7,7 @@ import LineGraph from './LineGraph.js';
 //Fake Dashboard for now
 
 
-function Progress({ submit }) {
+function ProgressPage({ submit }) {
     
     const [chartData, setChartData] = useState([])
 
@@ -24,4 +24,4 @@ function Progress({ submit }) {
     )
 }
 
-export default Progress
+export default ProgressPage

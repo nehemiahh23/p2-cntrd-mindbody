@@ -14,11 +14,9 @@ function MindPage() {
   }, [])
 
   return (
-    <Parallax className='progress-image' bgImage={Meditation} strength={400}>
       <div>
         {meditation.map (meditation => <MindCard key={meditation.id} meditation={meditation} />)}
       </div>
-      </Parallax>
     )
 }
 
