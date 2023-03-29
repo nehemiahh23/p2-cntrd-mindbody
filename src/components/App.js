@@ -36,6 +36,7 @@ function App() {
             <Route path="/body" element={<Body />} />
             <Route path="/connection" element={<Connection />} />
           </Routes>
+      <Progress submit={submit}/>
         </>
   );
 }
