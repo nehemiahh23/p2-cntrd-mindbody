@@ -21,7 +21,30 @@ function Input({ submit, setSubmit, activeDate, setUser }) {
   }
   // #endregion
   
+  const [face, setFace] = useState("😐")
+
+  function rangeHandler(e) {
+    
+    changeHandler(e)
+
+    if (e.target.value === "1") {
+      setFace("😔")
+    }
+    else if (e.target.value === "2") {
+      setFace("🙁")
+    }
+    else if (e.target.value === "3") {
+      setFace("😐")
+    }
+    else if (e.target.value === "4") {
+      setFace("🙂")
+    }
+    else if (e.target.value === "5") {
+      setFace("😄")
+    }}
+    
   // #region side effect updates date in data as day increments
+
   useEffect(() => {
     setData(
       {
@@ -74,9 +97,11 @@ function Input({ submit, setSubmit, activeDate, setUser }) {
         <form onSubmit={submitHandler} className='body-form' style={{alignItems: "center"}}> 
           <h1>Daily Check-In</h1>
           <span>How are you feeling today?</span>
-          <span>😐</span>
+
+          <span>{ face }</span>
+          <input onChange={ rangeHandler } type="range" min="1" max="5" name="mood" value={data.mood}></input>
           <input onChange={changeHandler} type="text" name="name" value={data.name}></input>
-          <input onChange={changeHandler} type="range" min="1" max="5" name="mood" value={data.mood}></input>
+
           <input onChange={changeHandler} type="number" step=".5" name="sleep" value={data.sleep}></input>
           <input onChange={changeHandler} type="text" name="comment" value={data.comment}></input>
           <input type="submit"></input>
