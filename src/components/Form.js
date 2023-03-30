@@ -8,7 +8,7 @@ import NavBar from "./NavBar"
 function Form({ submit, setSubmit, activeDate }) {
 
   return (
-    <Parallax className='progress-image' bgImage={Blue} strength={400}>
+    <Parallax className='progress-image' bgImage strength={400}>
       <div className='container'>
       <NavBar submit={submit} />
       <Input submit={submit} setSubmit={setSubmit} activeDate={activeDate} />

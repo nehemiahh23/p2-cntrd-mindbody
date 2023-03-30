@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 function Input({ submit, setSubmit, activeDate }) {
 
-  // #region collect form data
+  // #region form data
   const [data, setData] = useState(
     {
       date: activeDate,

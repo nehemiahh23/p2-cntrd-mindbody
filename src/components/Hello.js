@@ -27,16 +27,16 @@ function Hello({user, setUser}) {
 
   return(
     <div className="container">
-     <div className="form-box">
-       <div className="header-form">
-         <h4 className="text-primary text-center"><i className="fa fa-user-circle" style={{fontSize:"110px"}}></i></h4>
-         <div className="image">
-         </div>
-       </div>
-       <div className="body-form">
+      <div className="form-box">
+        <div className="header-form">
+          <h4 className="text-primary text-center"><i className="fa fa-user-circle" style={{fontSize:"110px"}}></i></h4>
+          <div className="image">
+          </div>
+          </div>
+          <div className="body-form">
         <form onSubmit={handleSubmit}>
-          <h1>Welcome, Friend!</h1>
-           <div className="input-group mb-3">
+          <h1>Welcome</h1>
+          <div className="input-group mb-3">
 <div className="input-group-prepend">
  <span className="input-group-text"><i className="fa fa-user"></i></span>
 </div>
