@@ -31,7 +31,7 @@ function App() {
       <Form submit={submit} setSubmit={setSubmit} activeDate={activeDate} setUser={setUser}/>  
       <NavBar submit={submit}/>
           <Routes>
-            <Route path= "/ProgressPage" element={<ProgressPage />} />
+            <Route path= "/ProgressPage" element={<ProgressPage submit={submit} />} />
             <Route path="/MindPage" element={<MindPage />} />
             <Route path="/BodyPage" element={<BodyPage />} />
             <Route path="/ConnectionPage" element={<ConnectionPage />} />

@@ -57,15 +57,7 @@
       "video": "https://www.youtube.com/watch?v=4"
     }
   ],
-  "statuses": [
-    {
-      "date": "03/30/2023",
-      "mood": 3,
-      "sleep": null,
-      "comment": "",
-      "id": 1
-    }
-  ],
+  "statuses": [],
   "user": [
     {
       "form": {
