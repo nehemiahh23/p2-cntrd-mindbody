@@ -29,7 +29,7 @@ function App() {
       <span>{ activeDate }</span>
       <Welcome user={user}/>
       <Form submit={submit} setSubmit={setSubmit} activeDate={activeDate} setUser={setUser}/>  
-      <NavBar />
+      <NavBar submit={submit}/>
           <Routes>
             <Route path= "/ProgressPage" element={<ProgressPage />} />
             <Route path="/MindPage" element={<MindPage />} />
