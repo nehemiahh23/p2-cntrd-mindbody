@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
-function Input({ submit, setSubmit, activeDate }) {
+function Input({ submit, setSubmit, activeDate, setUser }) {
 
-  // #region collect form data
+  const [form, setForm] = useState({name: ""})
+
+  // #region form data
   const [data, setData] = useState(
     {
       date: activeDate,
@@ -15,6 +17,7 @@ function Input({ submit, setSubmit, activeDate }) {
   
   function changeHandler(e) {
     setData({...data, [e.target.name]: e.target.value})
+    setForm({...form, [e.target.name]: e.target.value})
   }
   // #endregion
   
@@ -39,8 +42,9 @@ function Input({ submit, setSubmit, activeDate }) {
     else if (e.target.value === "5") {
       setFace("😄")
     }}
+    
+  // #region side effect updates date in data as day increments
 
-  // side effect updates date in data as day increments
   useEffect(() => {
     setData(
       {
@@ -51,6 +55,7 @@ function Input({ submit, setSubmit, activeDate }) {
       }
     )
   }, [activeDate])
+  // #endregion
 
   function submitHandler(e) {
     e.preventDefault()
@@ -71,6 +76,17 @@ function Input({ submit, setSubmit, activeDate }) {
       )
     })
     
+    fetch('http://localhost:3002/user', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accepts": "application/json"
+      },
+      body: JSON.stringify(form)})
+      .then(res => res.json())
+      .then(data => setUser(data))
+    setForm({name: ""})
+    
     setSubmit(true)
     
   }
@@ -81,8 +97,11 @@ function Input({ submit, setSubmit, activeDate }) {
         <form onSubmit={submitHandler} className='body-form' style={{alignItems: "center"}}> 
           <h1>Daily Check-In</h1>
           <span>How are you feeling today?</span>
+
           <span>{ face }</span>
           <input onChange={ rangeHandler } type="range" min="1" max="5" name="mood" value={data.mood}></input>
+          <input onChange={changeHandler} type="text" name="name" value={data.name}></input>
+
           <input onChange={changeHandler} type="number" step=".5" name="sleep" value={data.sleep}></input>
           <input onChange={changeHandler} type="text" name="comment" value={data.comment}></input>
           <input type="submit"></input>

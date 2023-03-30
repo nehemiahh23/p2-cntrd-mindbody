@@ -8,6 +8,20 @@ body{
   color:white;
 }
 
+.nav-container{
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 5rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .container{
   display:flex;
     align-items:center;
@@ -57,68 +71,166 @@ button{
   cursor:pointer;
 }
 
-
 .progress-image{
   position: flex;
   height: 100vh;
 }
 
-.mind-image{
-  position: flex;
-  height: 100vh;
+.mind-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #F4F4F4;
+  padding: 20px;
 }
 
-.mind-container {
-  position: flex;
+.mind-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.card {
+  transform-style: preserve-3d;
+  display: flex;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  margin: 10px;
+  perspective: 800px;
+  transition: transform 0.5s;
+  border-radius: 41px;
+  box-shadow: 29px 29px 18px #000000;
+  background-color: #DDDDDD;
+  padding: 10px;
+  z-index: 5;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12pt;
+  color: #888888;
+  text-align: center;
+  outline: 3px solid #696969;
+  outline-offset: 3px;
+}
+
+.card-flipped {
+  transform-style: preserve-3d;
+  display: flex;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  margin: 10px;
+  perspective: 800px;
+  transition: transform 0.5s;
+  border-radius: 41px;
+  box-shadow: 29px 29px 18px #000000;
+  background-color: #DDDDDD;
+  padding: 10px;
+  z-index: 5;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12pt;
+  color: #888888;
+  text-align: center;
+  outline: 3px solid #696969;
+  outline-offset: 3px;
+}
+
+.card-face {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 400px;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 41px;
+  background-color: #DDDDDD;
+  padding: 10px;
+  z-index: 5;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12pt;
+  color: #888888;
+  text-align: center;
+  outline: 3px solid #696969;
+  outline-offset: 3px;
+  transition: transform 0.6s ease;
 }
 
-.mind-card {
-  position: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 400px;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+.card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  z-index: 2;
+  transform: translateZ(100px) rotateY(0deg);
+  animation-name: parallax;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
-.mind-content {
-  position: flex;
-  z-index: 1;
+.card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  /* transform: translateZ(100px) rotateY(180deg); */
+  animation-name: parallax;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes parallax {
+  0% {
+    transform: translateZ(50px);
+    background-color: #fff;
+    color: #000;
+  }
+  50% {
+    transform: translateZ(60px);
+    background-color: #ff5252;
+    color: #fff;
+  }
+  100% {
+    transform: translateZ(50px);
+    background-color: #0000ff;
+    color: #fff;
+  }
+}
+
+.card-back button,
+.card-front button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  cursor: pointer;
+}
+
+.card-back button:hover,
+.card-front button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.card:hover .card-front {
+  transform: translateZ(60px);
+}
+
+.card:hover .card-back {
+  transform: rotateY(180deg) translateZ(60px);
 }
 
 .body-image {
 position: flex;
 height: 100vh;
-}
-
-.yoga-container {
-  position: flex;
-  width: 100%;
-  max-width: 400px;
-}
-
-.yoga-card{
-  position: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 400px;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-
-.yoga-content {
-  position: flex;
-  z-index: 1;
 }
 
 .workout-container {
@@ -128,16 +240,26 @@ height: 100vh;
 }
 
 .workout-card {
-  position: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 400px;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  border-radius: 41px;
+  -webkit-box-shadow: 29px 29px 18px #000000;
+  -moz-box-shadow: 29px 29px 18px #000000;
+  box-shadow: 29px 29px 18px #000000;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  border: 3px solid #808080;
+  background-color: #DDDDDD;
+  padding: 10px;
+  z-index: 5;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12pt;
+  color: #888888;
+  text-align: center;
+  outline: 3px solid #696969;
+  outline-offset: 3px;
 }
 .workout-content {
   position: flex;

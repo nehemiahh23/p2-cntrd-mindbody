@@ -7,7 +7,6 @@ import ConnectionPage from "./Connection";
 import ProgressPage from "./ProgressPage";
 import Welcome from "./Welcome";
 import NavBar from "./NavBar";
-import Hello from "./Hello";
 import moment from "moment";
 
 function App() {
@@ -25,11 +24,11 @@ function App() {
   
   return (
       <>
+      <h1 className='front-page-header'>cntrd MindBody</h1>
       <button onClick={dateIncrement}>New Day</button>
       <span>{ activeDate }</span>
-      <Hello user={user} setUser={setUser}/>
       <Welcome user={user}/>
-      <Form submit={submit} setSubmit={setSubmit} activeDate={activeDate} />  
+      <Form submit={submit} setSubmit={setSubmit} activeDate={activeDate} setUser={setUser}/>  
       <NavBar />
           <Routes>
             <Route path= "/ProgressPage" element={<ProgressPage />} />
@@ -37,7 +36,6 @@ function App() {
             <Route path="/BodyPage" element={<BodyPage />} />
             <Route path="/ConnectionPage" element={<ConnectionPage />} />
           </Routes>
-      <ProgressPage submit={submit}/>
         </>
   );
 }
