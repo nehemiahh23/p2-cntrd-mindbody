@@ -2,74 +2,38 @@
   "meditations": [
     {
       "id": 1,
-      "title": "Meditation 1",
+      "title": "Breath",
       "image": "https://www.youtube.com/watch?v=1",
-      "purpose": "This is the first meditation",
-      "guide": "John Doe",
-      "audio": "https://www.youtube.com/watch?v=1",
-      "duration": "1:00"
+      "purpose": "As I breathe, a soothing calm flows, Guided by whispers, my mind slows, And into deep relaxation, my body goes.",
+      "audio": "https://www.youtube.com/watch?v=1"
     },
     {
       "id": 2,
-      "title": "Meditation 2",
-      "purpose": "This is the second meditation",
-      "guide": "John Doe",
+      "title": "Be Still",
+      "purpose": "Tranquility, a gentle breeze. A moment of calm and peace. Stillness brings clarity and rest. A soothing balm that calms the chest.",
       "audio": "https://www.youtube.com/watch?v=2",
-      "image": "https://www.youtube.com/watch?v=2",
-      "duration": "1:00"
+      "image": "https://www.youtube.com/watch?v=2"
     },
     {
       "id": 3,
-      "title": "Meditation 3",
-      "purpose": "This is the third meditation",
-      "guide": "John Doe",
+      "title": "Calm Your Mind",
+      "purpose": "Take a breath, find your way, To stillness and peace, let thoughts sway, Close your eyes, feel calmness inside, Mind clears, doubts subside.",
       "audio": "https://www.youtube.com/watch?v=3",
-      "image": "https://www.youtube.com/watch?v=3",
-      "duration": "1:00"
+      "image": "https://www.youtube.com/watch?v=3"
     },
     {
       "id": 4,
-      "title": "Meditation 4",
-      "purpose": "This is the fourth meditation",
-      "guide": "John Doe",
+      "title": "Relax Your Body",
+      "purpose": "Let your body unwind, And leave your troubles behind, With each muscle released, Your mind will be at peace.",
       "audio": "https://www.youtube.com/watch?v=4",
-      "image": "https://www.youtube.com/watch?v=4",
-      "duration": "1:00"
+      "image": "https://www.youtube.com/watch?v=4"
     },
     {
       "id": 5,
-      "title": "Meditation 5",
-      "purpose": "This is the fifth meditation",
-      "guide": "John Doe",
+      "title": "Sleep",
+      "purpose": "close your eyes and drift away, To a place of rest and solace today, For sleep is medicine, this is true, A remedy that will see you through.",
       "audio": "https://www.youtube.com/watch?v=5",
-      "image": "https://www.youtube.com/watch?v=5",
-      "duration": "1:00"
-    }
-  ],
-  "yoga": [
-    {
-      "id": 1,
-      "title": "Yoga 1",
-      "purpose": "This is the first yoga",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=1",
-      "duration": "1:00"
-    },
-    {
-      "id": 2,
-      "title": "Yoga 2",
-      "purpose": "This is the second yoga",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=2",
-      "duration": "1:00"
-    },
-    {
-      "id": 3,
-      "title": "Yoga 3",
-      "purpose": "This is the third yoga",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=3",
-      "duration": "1:00"
+      "image": "https://www.youtube.com/watch?v=5"
     }
   ],
   "workouts": [
@@ -77,28 +41,31 @@
       "id": 1,
       "title": "Workout 1",
       "purpose": "This is the first workout",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=4",
-      "duration": "1:00"
+      "video": "https://www.youtube.com/watch?v=4"
     },
     {
       "id": 2,
       "title": "Workout 2",
       "purpose": "This is the second workout",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=4",
-      "duration": "1:00"
+      "video": "https://www.youtube.com/watch?v=4"
     },
     {
       "id": 3,
       "title": "Workout 3",
       "purpose": "This is the third workout",
       "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=4",
-      "duration": "1:00"
+      "video": "https://www.youtube.com/watch?v=4"
     }
   ],
-  "statuses": [],
+  "statuses": [
+    {
+      "date": "03/30/2023",
+      "mood": 3,
+      "sleep": null,
+      "comment": "",
+      "id": 1
+    }
+  ],
   "user": [
     {
       "form": {
@@ -123,6 +90,14 @@
     {
       "name": "Matt",
       "id": 5
+    },
+    {
+      "name": "Jack",
+      "id": 6
+    },
+    {
+      "name": "Jack",
+      "id": 7
     }
   ]
 }

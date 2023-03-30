@@ -24,6 +24,7 @@ function App() {
   
   return (
       <>
+      <h1 className='front-page-header'>cntrd MindBody</h1>
       <button onClick={dateIncrement}>New Day</button>
       <span>{ activeDate }</span>
       <Welcome user={user}/>
@@ -35,7 +36,6 @@ function App() {
             <Route path="/BodyPage" element={<BodyPage />} />
             <Route path="/ConnectionPage" element={<ConnectionPage />} />
           </Routes>
-      <ProgressPage submit={submit}/>
         </>
   );
 }

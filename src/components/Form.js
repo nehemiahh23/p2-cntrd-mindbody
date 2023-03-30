@@ -7,7 +7,7 @@ import Blue from "../images/blue.jpg"
 function Form({ submit, setSubmit, activeDate, setUser }) {
 
   return (
-    <Parallax className='progress-image' bgImage={Blue} strength={400}>
+    <Parallax className='progress-image' bgImage strength={400}>
       <div className='container'>
       <Input submit={submit} setSubmit={setSubmit} activeDate={activeDate} setUser={setUser} />
       <Message submit={submit} />

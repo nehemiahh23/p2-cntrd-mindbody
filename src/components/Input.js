@@ -4,7 +4,7 @@ function Input({ submit, setSubmit, activeDate, setUser }) {
 
   const [form, setForm] = useState({name: ""})
 
-  // #region collect form data
+  // #region form data
   const [data, setData] = useState(
     {
       date: activeDate,

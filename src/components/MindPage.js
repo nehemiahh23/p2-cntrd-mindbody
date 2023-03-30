@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import Meditation from '../images/mind.jpg'
 import MindCard from './MindCard'
-import { Parallax } from "react-parallax";
+
 
 function MindPage() {
 
@@ -14,10 +13,11 @@ function MindPage() {
   }, [])
 
   return (
-      <div>
-        {meditation.map (meditation => <MindCard key={meditation.id} meditation={meditation} />)}
+      <div className="mind-page">
+        {meditation.map(meditation => <MindCard key={meditation.id} meditation={meditation} />)}
       </div>
     )
 }
 
 export default MindPage
+
