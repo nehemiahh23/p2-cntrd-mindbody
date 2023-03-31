@@ -90,13 +90,6 @@
     {
       "name": "Jack",
       "id": 7
-    },
-    {
-      "name": "",
-      "sleep": "5",
-      "mood": "2",
-      "comment": "tired",
-      "id": 8
     }
   ]
 }
