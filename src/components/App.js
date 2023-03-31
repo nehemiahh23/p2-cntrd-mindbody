@@ -16,6 +16,8 @@ function App() {
   const [dateObj, setDateObj] = useState(moment())
   const [activeDate, setActiveDate] = useState(dateObj.format("L"))
   const navigate = useNavigate()
+  const midnight = moment().add(1, "days").startOf("day")
+  const timeDiff = midnight.diff(dateObj)
   
   function dateIncrement() {
     setDateObj(dateObj.add(1, "days"))
@@ -23,6 +25,8 @@ function App() {
     setSubmit(false)
     navigate("/")
   }
+
+  setTimeout(dateIncrement, timeDiff)
   
   return (
       <>
