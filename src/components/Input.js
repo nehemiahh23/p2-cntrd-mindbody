@@ -93,18 +93,18 @@ function Input({ submit, setSubmit, activeDate, setUser }) {
 
   if (!submit) {
     return (
-      <div className='form-box'>
+      <div className='form-box-2'>
         <form onSubmit={submitHandler} className='body-form' style={{alignItems: "center"}}> 
           <h1>Daily Check-In</h1>
           <span>How are you feeling today?</span>
 
-          <span>{ face }</span>
           <input onChange={ rangeHandler } type="range" min="1" max="5" name="mood" value={data.mood}></input>
-          <input onChange={changeHandler} type="text" name="name" value={data.name}></input>
+          <h2 style={{margin: "0"}}>{ face }</h2>
+          <input onChange={changeHandler} className="form-field" placeholder='Name' type="text" name="name" value={data.name}></input>
 
-          <input onChange={changeHandler} type="number" step=".5" name="sleep" value={data.sleep}></input>
-          <input onChange={changeHandler} type="text" name="comment" value={data.comment}></input>
-          <input type="submit"></input>
+          <input onChange={changeHandler} className="form-field" placeholder='Hours' type="number" step=".5" name="sleep" value={data.sleep}></input>
+          <textarea onChange={changeHandler} className="form-field" placeholder='Comment...' rows="4" cols="20" name="comment" value={data.comment}></textarea>
+          <input type="submit" className="form-field"></input>
         </form>
       </div>
     )

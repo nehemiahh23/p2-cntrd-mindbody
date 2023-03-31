@@ -77,6 +77,24 @@ body{
     height:100vh;
     width:100%;
 }
+
+  .form-box{
+      width:300px;
+      height:50vh;
+      background: rgba(7, 6, 6, 0.16);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.697);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(8, 9, 13, 0.888);
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-around;
+      opacity:0.5;
+      border-radius:2%;
+  }
+
   .form-box{
       width:300px;
       height:200px;
@@ -93,6 +111,13 @@ body{
       opacity:0.5;
       border-radius:2%;
   }
+
+  .form-field {
+    border-radius: 10px;
+    margin: 2px;
+    padding: 10px;
+  }
+
 .header-form{
   margin-bottom:15px;
 }

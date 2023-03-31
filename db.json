@@ -57,7 +57,15 @@
       "video": "https://www.youtube.com/watch?v=4"
     }
   ],
-  "statuses": [],
+  "statuses": [
+    {
+      "date": "03/31/2023",
+      "mood": 2,
+      "sleep": 5,
+      "comment": "tired",
+      "id": 1
+    }
+  ],
   "user": [
     {
       "form": {
@@ -90,6 +98,13 @@
     {
       "name": "Jack",
       "id": 7
+    },
+    {
+      "name": "",
+      "sleep": "5",
+      "mood": "2",
+      "comment": "tired",
+      "id": 8
     }
   ]
 }
