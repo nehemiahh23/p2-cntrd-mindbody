@@ -60,9 +60,9 @@
   "statuses": [
     {
       "date": "03/31/2023",
-      "mood": 2,
+      "mood": 3,
       "sleep": 5,
-      "comment": "tired",
+      "comment": "",
       "id": 1
     }
   ],
@@ -105,6 +105,11 @@
       "mood": "2",
       "comment": "tired",
       "id": 8
+    },
+    {
+      "name": "",
+      "sleep": "5",
+      "id": 9
     }
   ]
 }

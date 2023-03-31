@@ -22,6 +22,16 @@ function MoodGraph({ moodData }) {
                     legend: {
                         display: false
                     }
+                },
+                scales: {
+                    y: {
+                        min: 0,
+                        max: 5,
+                        ticks: {
+                        stepSize: 1
+                    }
+                    }
+                    
                 }
             }}
         />

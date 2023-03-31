@@ -88,6 +88,7 @@ function Input({ submit, setSubmit, activeDate, setUser }) {
     setForm({name: ""})
     
     setSubmit(true)
+    setFace("😐")
     
   }
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Form from "./Form"
 import MindPage from "./MindPage"
 import BodyPage from "./BodyPage"
@@ -15,11 +15,13 @@ function App() {
   const [submit, setSubmit] = useState(false)
   const [dateObj, setDateObj] = useState(moment())
   const [activeDate, setActiveDate] = useState(dateObj.format("L"))
+  const navigate = useNavigate()
   
   function dateIncrement() {
     setDateObj(dateObj.add(1, "days"))
     setActiveDate(dateObj.format("L"))
     setSubmit(false)
+    navigate("/")
   }
   
   return (
