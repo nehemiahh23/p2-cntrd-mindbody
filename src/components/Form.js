@@ -1,18 +1,20 @@
-import React from 'react'
-import Input from "./Input"
-import Message from "./Message"
+import React from 'react';
+import Input from "./Input";
+import Message from "./Message";
 import { Parallax } from "react-parallax";
-import Blue from "../images/blue.jpg"
+import "./Form.css";
+import backgroundImage from "../images/form1-bg.jpg";
+
 
 function Form({ submit, setSubmit, activeDate, setUser }) {
 
   return (
-    <Parallax className='progress-image' bgImage strength={400}>
-      <div className='container'>
+    <div className="form-page">
+  <Parallax bgImage={backgroundImage} strength={500}>
       <Input submit={submit} setSubmit={setSubmit} activeDate={activeDate} setUser={setUser} />
       <Message submit={submit} />
-    </div>
-        </Parallax>
+  </Parallax>
+      </div>
   )
 }
 

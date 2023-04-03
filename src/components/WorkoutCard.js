@@ -1,22 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react';
+import './WorkoutCard.css';
 
-function WorkoutCard({workouts}) {
 
-return (
-    <div className="workout-container">
-        <div className="workout-card">
-            <div className="workout-content">
-                <h2>{workouts.title}</h2>
-                <p>{workouts.image}</p>
-                <h3>{workouts.purpose}</h3>
-                <p>{workouts.guide}</p>
-                <p>{workouts.video}</p>
-                <p>{workouts.duration}</p>
-            </div>
+function WorkoutCard({ workouts }) {
+  const [flipped, setFlipped] = useState(false);
+
+  const handleCardFlip = () => {
+    setFlipped(!flipped);
+  };
+
+  const { title, purpose, duration, videoId } = workouts;
+  const videoUrl = `https://www.youtube.com/embed/${videoId}`;
+
+  return (
+      <div className={`workout-card ${flipped ? 'flipped' : ''}`} onClick={handleCardFlip}>
+        <div className="workout-card__front">
+          <div>
+            <h2>{title}</h2>
+            <h3>{purpose}</h3>
+            <button className="workout-card__button__front"></button>
+          </div>
         </div>
-    </div>
-    )
-
+        <div className="workout-card__back" onClick={handleCardFlip}>
+          <iframe
+            src={videoUrl}
+            title={title}
+            width="280"
+            height="158"
+            frameBorder="0"
+            allowFullScreen
+          />
+          <p className='duration'>{duration}</p>
+          <button className="workout-card__button__back"></button>
+        </div>
+      </div>
+  );
 }
 
-export default WorkoutCard
+export default WorkoutCard;

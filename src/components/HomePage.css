@@ -1,0 +1,116 @@
+.homepage-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 2px 2px #070d28;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.copyright {
+  display: flex;
+  flex: row-reverse;
+  justify-content: center;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px #070d28;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+.brand {
+  font-size: 2rem;
+  color: #fdfdfd;
+  margin-bottom: 3rem;
+  margin-top: 5rem; overflow: 
+  hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(239, 239, 237); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+  typing 8.0s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(248, 248, 248); }
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #013c0f;
+  background-color: #c7cbd9ca;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(231, 227, 227, 0.3);
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  margin-top: 2rem;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(231, 227, 227, 0.3);
+  }
+  to {
+    transform: scale(1.2);
+    box-shadow: 0 0 40px #c7cbd9ca, 0 0 80px #c7cbd9ca, 0 0 160px #c7cbd9ca;
+  }
+}
+
+
+.button:hover {
+  background-color: #013c0f;
+  color:rgba(231, 227, 227, 0.3);
+  box-shadow: 5px 5px 20px rgba(81, 224, 210, 0.3), -5px -5px 20px rgba(81, 224, 210, 0.3);
+}
+
+
+.homepage-container .parallax.fade-enter {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.homepage-container .parallax.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.homepage-container .parallax.fade-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.homepage-container .parallax.fade-exit-active {
+  opacity: 0;
+  transform: translateY(50%);
+}

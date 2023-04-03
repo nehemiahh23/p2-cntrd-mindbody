@@ -1,0 +1,10 @@
+.workout-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #373232a4;
+    padding: 20px;
+    background: url('../images/workoutpage-bg.jpg') center/cover no-repeat;
+
+  }
