@@ -26,19 +26,21 @@ function App() {
   const midnight = moment().add(1, "days").startOf("day")
   const timeDiff = midnight.diff(dateObj)
 
-  // function dateIncrement() {
-  //   setDateObj(dateObj.add(1, "days"));
-  //   setActiveDate(dateObj.format("L"));
-  //   setSubmit(false);
+  function dateIncrement() {
+    setDateObj(dateObj.add(1, "days"));
+    setActiveDate(dateObj.format("L"));
+    setSubmit(false);
     navigate("/")
-  // }
+  }
 
   setTimeout(dateIncrement, timeDiff)
 
   return (
     <>
-      {/* <button onClick={dateIncrement}>New Day</button>
-      <span>{activeDate}</span> */}
+      <div className="button-div">
+        <button onClick={dateIncrement}>New Day</button>
+        <span>{activeDate}</span>
+      </div>
       <HomePage className="home-page" />
       <WelcomePage className="welcome-page" />
       <div>

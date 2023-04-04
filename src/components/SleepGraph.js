@@ -3,7 +3,7 @@ import { Line } from 'react-chartjs-2'
 
 function SleepGraph({ sleepData }) {
   return (
-    <div style={{height: "45vh", width: "45vw"}}>
+    <div className="graph-div" style={{height: "45vh", width: "45vw"}}>
         <Line
             data={{
                 labels: sleepData.map(status => status.date),
