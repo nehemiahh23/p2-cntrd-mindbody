@@ -82,57 +82,7 @@
       "videoId": "t9NInqDhGv4"
     }
   ],
-  "statuses": [
-    {
-      "date": "03/30/2023",
-      "mood": 3,
-      "sleep": null,
-      "comment": "",
-      "id": 1
-    },
-    {
-      "date": "03/30/2023",
-      "mood": 3,
-      "sleep": null,
-      "comment": "",
-      "id": 2
-    },
-    {
-      "date": "03/31/2023",
-      "mood": 4,
-      "sleep": null,
-      "comment": "",
-      "id": 3
-    },
-    {
-      "date": "04/02/2023",
-      "mood": 3,
-      "sleep": null,
-      "comment": "",
-      "id": 4
-    },
-    {
-      "date": "04/02/2023",
-      "mood": 3,
-      "sleep": null,
-      "comment": "",
-      "id": 5
-    },
-    {
-      "date": "04/02/2023",
-      "mood": 3,
-      "sleep": null,
-      "comment": "",
-      "id": 6
-    },
-    {
-      "date": "04/03/2023",
-      "mood": 3,
-      "sleep": null,
-      "comment": "",
-      "id": 7
-    }
-  ],
+  "statuses": [],
   "user": [
     {
       "form": {

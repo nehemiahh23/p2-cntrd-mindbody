@@ -22,6 +22,16 @@ function SleepGraph({ sleepData }) {
                     legend: {
                         display: false
                     }
+                },
+                scales: {
+                    y: {
+                        min: 0,
+                        max: 16,
+                        ticks: {
+                        stepSize: 1
+                    }
+                    }
+                    
                 }
             }}
         />
