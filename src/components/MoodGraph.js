@@ -3,7 +3,7 @@ import { Line } from 'react-chartjs-2'
 
 function MoodGraph({ moodData }) {
   return (
-    <div style={{height: "45vh", width: "45vw"}}>
+    <div className="graph-div" style={{height: "45vh", width: "45vw"}}>
         <Line
             data={{
                 labels: moodData.map(status => status.date),

@@ -1,0 +1,9 @@
+.connection-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #5c6664;
+    padding: 20px;
+    background: url('../images/connectionpage-bg.jpg') center/cover no-repeat;
+  }

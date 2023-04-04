@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import MindCard from './MindCard'
-
+import './MindPage.css'
 
 function MindPage() {
 

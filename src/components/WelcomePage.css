@@ -1,0 +1,116 @@
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;}
+
+.welcome-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow:5px 10px 20px rgb(0, 0, 0);
+  margin: 0;
+  padding: 5rem;
+  color: aliceblue;
+}
+
+.welcome-message {
+  font-size: 2rem;
+  font-weight: bold;
+  color:aliceblue;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(41, 96, 50, 0.694);
+  border-radius: 10px;
+  box-shadow: 5px 20px 20px rgba(8, 8, 8, 0.2);
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.746);
+}
+
+.author{
+  font-size: 3.5rem;
+  font-weight: bold;
+  color:aliceblue;
+  margin: 0;
+  padding: 2rem;
+  animation-duration: 4s;
+  animation-delay: 6.0s;
+  border-radius: 10px;
+  text-shadow:5px 10px 20px rgb(0, 0, 0)
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 {
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #013c0f;
+  background-color: #c7cbd9ca;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(231, 227, 227, 0.3);
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  margin-top: 2rem;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(231, 227, 227, 0.3);
+  }
+  to {
+    transform: scale(1.2);
+    box-shadow: 0 0 40px #c7cbd9ca, 0 0 80px #c7cbd9ca, 0 0 160px #c7cbd9ca;
+  }
+}
+
+
+.button1:hover {
+  background-color: #013c0f;
+  color:rgba(231, 227, 227, 0.3);
+  box-shadow: 5px 5px 20px rgba(81, 224, 210, 0.3), -5px -5px 20px rgba(81, 224, 210, 0.3);
+}
+
+
+
+.parallax-inner {
+  height: 100%;
+}
+.welcome-container .parallax.fade-enter {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.welcome-container .parallax.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.welcome-container .parallax.fade-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.welcome-container .parallax.fade-exit-active {
+  opacity: 0;
+  transform: translateY(50%);
+}

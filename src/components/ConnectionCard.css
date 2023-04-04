@@ -1,0 +1,81 @@
+.connection-card-container {
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .connection-card-container {
+      gap: 3rem;
+    }
+  }
+  
+  .connection-card {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+    transform-origin: center;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    color: white
+  }
+  
+  .connection-card .connection-card__front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px -10px 50px rgba(202, 245, 11, 0.402);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .connection-card .connection-card__back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 29px 29px 18px #001407;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .connection-card .connection-card__front {
+    transform: rotateY(0deg);
+    background-color: #05340068;
+  }
+  
+  .connection-card .connection-card__back {
+    transform: rotateY(180deg);
+    background-color: #5d2e0497;
+    font-size: 1.3rem;
+  }
+  
+  .connection-card .connection-card__button__front {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .connection-card .connection-card__button__back {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .connection-card.flipped {
+    transform: rotateY(180deg);
+  }
+  

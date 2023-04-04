@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Parallax } from "react-parallax";
 import { Chart } from "chart.js/auto"
-import ProgressPic from '../images/progress.jpg'
+import ProgressPic from '../images/progress5-bg.jpg'
 import MoodGraph from './MoodGraph.js';
 import SleepGraph from './SleepGraph.js';
 import MoodMessage from './MoodMessage';

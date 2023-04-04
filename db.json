@@ -5,59 +5,113 @@
       "title": "Breath",
       "image": "https://www.youtube.com/watch?v=1",
       "purpose": "As I breathe, a soothing calm flows, Guided by whispers, my mind slows, And into deep relaxation, my body goes.",
-      "audio": "https://www.youtube.com/watch?v=1"
+      "videoId": "VUjiXcfKBn8"
     },
     {
       "id": 2,
       "title": "Be Still",
       "purpose": "Tranquility, a gentle breeze. A moment of calm and peace. Stillness brings clarity and rest. A soothing balm that calms the chest.",
-      "audio": "https://www.youtube.com/watch?v=2",
-      "image": "https://www.youtube.com/watch?v=2"
+      "videoId": "BbCZ131Zw8o"
     },
     {
       "id": 3,
       "title": "Calm Your Mind",
       "purpose": "Take a breath, find your way, To stillness and peace, let thoughts sway, Close your eyes, feel calmness inside, Mind clears, doubts subside.",
-      "audio": "https://www.youtube.com/watch?v=3",
-      "image": "https://www.youtube.com/watch?v=3"
+      "videoId": "caq8XpjAswo"
     },
     {
       "id": 4,
       "title": "Relax Your Body",
       "purpose": "Let your body unwind, And leave your troubles behind, With each muscle released, Your mind will be at peace.",
-      "audio": "https://www.youtube.com/watch?v=4",
-      "image": "https://www.youtube.com/watch?v=4"
+      "videoId": "AeOXCgF4S0s&t=416s"
     },
     {
       "id": 5,
       "title": "Sleep",
       "purpose": "close your eyes and drift away, To a place of rest and solace today, For sleep is medicine, this is true, A remedy that will see you through.",
-      "audio": "https://www.youtube.com/watch?v=5",
-      "image": "https://www.youtube.com/watch?v=5"
+      "videoId": "DBhadQTCBeo"
+    },
+    {
+      "id": 6,
+      "title": "Anxiety & Depression",
+      "purpose": "Quiet your mind, calm your soul: a meditation for anxiety and depression",
+      "videoId": "6wl4j4gd2WI"
     }
   ],
   "workouts": [
     {
       "id": 1,
-      "title": "Workout 1",
-      "purpose": "This is the first workout",
-      "video": "https://www.youtube.com/watch?v=4"
+      "title": "Upper-body Burn",
+      "purpose": "Burn out your chest, triceps, and shoulders ",
+      "duration": "10 minutes",
+      "videoId": "q_fd1Ez10DU"
     },
     {
       "id": 2,
-      "title": "Workout 2",
-      "purpose": "This is the second workout",
-      "video": "https://www.youtube.com/watch?v=4"
+      "title": "Full-body Burn",
+      "purpose": "Train every muscle, feel every gain: Unleash your full potential with our full body workout.",
+      "duration": "15 minutes",
+      "videoId": "-P0VrQ2_YVk"
     },
     {
       "id": 3,
-      "title": "Workout 3",
-      "purpose": "This is the third workout",
-      "guide": "John Doe",
-      "video": "https://www.youtube.com/watch?v=4"
+      "title": "Lower-body Burn",
+      "purpose": "Strong legs, strong foundation. Train your lower body for power and stability.",
+      "duration": "10 minutes",
+      "videoId": "edx3Xa6Qt7M"
+    },
+    {
+      "id": 4,
+      "title": "Abdominal Burn",
+      "purpose": "Sculpt your core, ignite your power - Ab Burn, the ultimate workout for a strong and toned midsection!",
+      "duration": "12 minutes",
+      "videoId": "3p8EBPVZ2Iw"
+    },
+    {
+      "id": 5,
+      "title": "Warm-up",
+      "purpose": "Prep your body, ignite your fire - Let's get ready to sweat with our warm-up routine!",
+      "duration": "8 minutes",
+      "videoId": "rKpcpsvclw0"
+    },
+    {
+      "id": 6,
+      "title": "Cool-down",
+      "purpose": "Finish strong and recover well with our refreshing cool down routine.",
+      "duration": "8 minutes",
+      "videoId": "t9NInqDhGv4"
     }
   ],
-  "statuses": [],
+  "statuses": [
+    {
+      "date": "04/03/2023",
+      "mood": 5,
+      "sleep": 8,
+      "comment": "",
+      "id": 1
+    },
+    {
+      "date": "04/04/2023",
+      "mood": 4,
+      "sleep": 7,
+      "comment": "",
+      "id": 2
+    },
+    {
+      "date": "04/05/2023",
+      "mood": 3,
+      "sleep": 8,
+      "comment": "",
+      "id": 3
+    },
+    {
+      "date": "04/06/2023",
+      "mood": 1,
+      "sleep": 2,
+      "comment": "",
+      "id": 4
+    }
+  ],
   "user": [
     {
       "form": {
@@ -90,6 +144,91 @@
     {
       "name": "Jack",
       "id": 7
+    },
+    {
+      "name": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "mood": "4",
+      "id": 9
+    },
+    {
+      "name": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "id": 11
+    },
+    {
+      "name": "",
+      "id": 12
+    },
+    {
+      "name": "",
+      "id": 13
+    },
+    {
+      "name": "",
+      "id": 14
+    },
+    {
+      "name": "",
+      "mood": "2",
+      "sleep": "5",
+      "id": 15
+    },
+    {
+      "name": "",
+      "mood": "5",
+      "sleep": "8",
+      "id": 16
+    },
+    {
+      "name": "",
+      "mood": "4",
+      "sleep": "7",
+      "id": 17
+    },
+    {
+      "name": "",
+      "sleep": "2",
+      "mood": "1",
+      "id": 18
+    }
+  ],
+  "affirmations": [
+    {
+      "id": 1,
+      "title": "You are beautiful",
+      "description": "You are a beautiful and unique individual, with a radiance that shines from within. Your inner beauty and positive energy light up the world around you, and your confidence in your own worth and beauty is unshakeable. You are beautiful just as you are, and your beauty is a reflection of the love and light that you bring to the world. "
+    },
+    {
+      "id": 2,
+      "title": "You are good enough",
+      "description": "You are a stunning creation, radiating beauty from the inside out. Your unique features and qualities make you one-of-a-kind, and your inner light shines bright for all to see. Remember to celebrate your beauty each and every day, for you are truly a masterpiece of grace, strength, and elegance. You are beautiful, just as you are, and your beauty has the power to light up the world around you. So embrace it, own it, and let it shine for all to see."
+    },
+    {
+      "id": 3,
+      "title": "You are strong",
+      "description": "You are incredibly strong and resilient. No matter what challenges come your way, you have the inner strength to overcome them. Trust in yourself and your abilities, and know that you are capable of achieving great things. Keep pushing forward and stay focused on your goals, and you will continue to grow in strength and confidence."
+    },
+    {
+      "id": 4,
+      "title": "You are loved",
+      "description": "You are cherished and appreciated for who you are. You bring joy and light into the lives of those around you. You are deserving of love and affection, and it is all around you. You are surrounded by people who care deeply for you, and you have a special place in their hearts. You are loved for your strengths, your vulnerabilities, your quirks, and your uniqueness. You are loved unconditionally, and nothing can change that. Remember that you are never alone, and that you are always loved."
+    },
+    {
+      "id": 5,
+      "title": "You are worthy",
+      "description": "Wholehearted living is about engaging in our lives from a place of worthiness. It means cultivating the courage, compassion, and connection to wake up in the morning and think, no matter what gets done and how much is left undone, I am enough. It’s going to bed at night thinking, yes, I am imperfect and vulnerable and sometimes afraid, but that does not change the truth that I am also brave and worthy of love and belonging."
+    },
+    {
+      "id": 6,
+      "title": "You Belong Here",
+      "description": "You are valuable, unique and worthy, and your presence in this world is important. You belong and are loved for exactly who you are, with all your strengths and flaws. You have the power to create a positive impact and your potential is limitless. Embrace your authentic self, follow your dreams, and trust in your abilities. You are enough, and you deserve all the happiness and fulfillment in the world."
     }
   ]
 }

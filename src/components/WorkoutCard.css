@@ -1,0 +1,119 @@
+.workout-card-container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .workout-card-container {
+    gap: 3rem;
+  }
+}
+
+.workout-card {
+  position: relative;
+    height: 400px;
+    width: 300px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+    transform-origin: center;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.545)
+  }
+
+  .duration{
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+
+.workout-card .workout-card__front{
+  position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 50px rgba(47, 126, 16, 0.61);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .workout-card .workout-card__front:hover{
+      background-color: #013c0fad;
+      color:rgba(255, 255, 255, 0.854);
+      box-shadow: 5px 5px 20px rgba(240, 247, 247, 0.382), -5px -5px 20px rgba(234, 238, 238, 0.608);
+    }
+  
+
+
+.workout-card .workout-card__back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 29px 29px 18px #000602ce;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.workout-card .workout-card__front{ 
+  transform: rotateY(0deg);
+  background-color: #05340051;
+}
+.workout-card .workout-card__back {
+  transform: rotateY(180deg);
+  background-color: #013c0fad;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.945);
+  
+}
+
+.workout-card .workout-card__front h2,
+.workout-card .workout-card__back h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  transform: rotateY(0deg);
+  background-color: #05340068;
+}
+
+.workout-card .workout-card__front p,
+.workout-card .workout-card__back p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.workout-card .workout-card__front button{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.workout-card .workout-card__back button {
+  opacity: 0;
+    pointer-events: none;
+}
+
+.workout-card .workout-card__front button:hover,
+.workout-card .workout-card__back button:hover {
+  background-color: #0114042b;
+  color: #FFF;
+}
+
+.workout-card.flipped{
+  transform: rotateY(180deg);
+}

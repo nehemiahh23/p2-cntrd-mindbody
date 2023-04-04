@@ -4,6 +4,7 @@ import MindIcon from "../images/Eco_(24).jpg"
 import BodyIcon from "../images/Health_(23).jpg"
 import ConnectionIcon from "../images/vecteezy_icon-symbol-chat-outline-vector-illustration_.jpg"
 import ProgressIcon from "../images/Statistical__Graph.jpg"
+import './NavBar.css'
 
 
 function NavBar({ submit }) {
