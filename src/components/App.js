@@ -33,7 +33,7 @@ function App() {
     navigate("/")
   }
 
-  setTimeout(dateIncrement, timeDiff)
+  // setTimeout(dateIncrement, timeDiff)
 
   return (
     <>

@@ -82,7 +82,36 @@
       "videoId": "t9NInqDhGv4"
     }
   ],
-  "statuses": [],
+  "statuses": [
+    {
+      "date": "04/03/2023",
+      "mood": 5,
+      "sleep": 8,
+      "comment": "",
+      "id": 1
+    },
+    {
+      "date": "04/04/2023",
+      "mood": 4,
+      "sleep": 7,
+      "comment": "",
+      "id": 2
+    },
+    {
+      "date": "04/05/2023",
+      "mood": 3,
+      "sleep": 8,
+      "comment": "",
+      "id": 3
+    },
+    {
+      "date": "04/06/2023",
+      "mood": 1,
+      "sleep": 2,
+      "comment": "",
+      "id": 4
+    }
+  ],
   "user": [
     {
       "form": {
@@ -150,6 +179,24 @@
       "mood": "2",
       "sleep": "5",
       "id": 15
+    },
+    {
+      "name": "",
+      "mood": "5",
+      "sleep": "8",
+      "id": 16
+    },
+    {
+      "name": "",
+      "mood": "4",
+      "sleep": "7",
+      "id": 17
+    },
+    {
+      "name": "",
+      "sleep": "2",
+      "mood": "1",
+      "id": 18
     }
   ],
   "affirmations": [
