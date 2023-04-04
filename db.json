@@ -82,22 +82,7 @@
       "videoId": "t9NInqDhGv4"
     }
   ],
-  "statuses": [
-    {
-      "date": "04/03/2023",
-      "mood": 3,
-      "sleep": null,
-      "comment": "",
-      "id": 1
-    },
-    {
-      "date": "04/03/2023",
-      "mood": 2,
-      "sleep": 5,
-      "comment": "",
-      "id": 2
-    }
-  ],
+  "statuses": [],
   "user": [
     {
       "form": {
